@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Allison Binger's thank you note." />
+    <meta name="author" content="Allison Binger" />
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico" />
+    <title>Thank you, Elisabeth!</title>
+    <style>
+      :root {
+        --osu-orange-color: #fe5c00;
+        --primary-color-black: #000000;
+        --primary-color-white: #ffffff;
+        --primary-color-grey: #dddddd;
+      }
+
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .view-toggle {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+      }
+      .page-title {
+        text-align: center;
+        width: 100%;
+      }
+
+      .toggle-instructions {
+        text-align: center;
+        max-width: 600px;
+        margin: 10px 0px;
+        font-size: 14px;
+      }
+
+      .email-template {
+        font-family: Arial, Helvetica, sans-serif;
+        height: auto;
+        width: 600px;
+        text-align: center;
+        margin: 20px 0 0 0;
+        padding: 0px;
+      }
+      .desktop-view {
+        max-width: 600px;
+      }
+
+      .mobile-view {
+        max-width: 400px;
+      }
+
+      .mobile-view {
+        display: none;
+      }
+
+      tr.content {
+        min-height: 200px;
+      }
+
+      .button {
+        color: var(--primary-color-black);
+        border: 2px solid var(--osu-orange-color);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 4px;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: transparent;
+      }
+
+      .button.active {
+        background-color: var(--osu-orange-color);
+        color: var(--primary-color-black);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .email-template tbody {
+        padding: 0px;
+      }
+
+      .info-bar td {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .info-bar a {
+        text-decoration: none;
+        color: var(--primary-color-black);
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0px;
+      }
+
+      .header td {
+        padding-bottom: 10px;
+      }
+
+      .header-logo {
+        max-height: 100px;
+        max-width: 100%;
+      }
+
+      .content-header {
+        font-weight: bold;
+        font-size: 25px;
+        color: var(--osu-orange-color);
+        margin: 10px;
+        padding: 0px 20px;
+      }
+
+      .mobile-view .content-header {
+        padding: 0px 20px;
+      }
+
+      .content p {
+        text-align: left;
+        padding: 0px 20px;
+      }
+
+      .content h3 {
+        text-align: left;
+        padding: 0px 20px;
+        color: var(--osu-orange-color);
+        margin-bottom: 6px;
+        font-size: 21px;
+      }
+
+      .content ul {
+        text-align: left;
+        margin: 0px 20px 0 10px;
+      }
+      .content li {
+        margin-bottom: 5px;
+      }
+
+      .ctas {
+        margin: 0px;
+      }
+
+      .ctas td {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 20px;
+        gap: 20px;
+      }
+
+      .ctas a {
+        background-color: var(--primary-color-grey);
+        color: var(--primary-color-black);
+        padding: 15px 0px;
+        border: none;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .ctas a {
+        text-decoration: none;
+        color: var(--primary-color-black);
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .ctas a:hover {
+        background-color: var(--osu-orange-color);
+        color: var(--primary-color-white);
+      }
+
+      .social-links td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0px;
+      }
+
+      .social-links a {
+        display: block;
+      }
+
+      .social-links svg {
+        max-height: 35px;
+        max-width: 35px;
+      }
+
+      .footer img {
+        max-height: 45px;
+      }
+
+      .footer p {
+        text-wrap: none;
+        margin: 0px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="email-template desktop-view">
+      <tr class="header">
+        <td>
+          <img
+            src="https://i.imgur.com/4fOCDl2.png"
+            alt="Banner with 'Thank you for your consideration!'"
+            class="header-logo"
+          />
+        </td>
+      </tr>
+      <tr class="hero-image">
+        <td>
+          <img
+            src="https://i.imgur.com/Yonwqcj.png"
+            alt="Two corgis, One is brown and white named Gouda, and the other is blonde and white name Mozzarella. "
+            class="peds-image"
+          />
+        </td>
+      </tr>
+      <tr class="content">
+        <td>
+          <h2 class="content-header">
+            Picture Our Mom <br />
+            as the new Digital Web Specialist
+          </h2>
+          <p class="content-paragraph">
+            Dear Elisabeth,
+            <br /><br />
+            We’d love to see our mom as part of the cowboy family. She was
+            telling us all about this new role and, while we literally do not
+            understand anything about web development (we are corgis), she seems
+            really jazzed for the opportunity
+          </p>
+          <h3 class="content-subheader">
+            Why we think our mom is the right fit.
+          </h3>
+          <ul class="content-list">
+            <li>
+              She’s always pushing buttons and clicking on her computer, even
+              when she should be giving us 24/7 attention. But I guess we can
+              share her.
+            </li>
+            <li>
+              She is always asking other humans if they need help with anything,
+              which I’m sure is a great attitude but we need help getting more
+              treats.
+            </li>
+            <li>
+              We don’t live too far away, which means mom gets home from work
+              sooner and she can play with us before the sun goes down!
+            </li>
+            <li>
+              Probably a bunch of tech things she told us you about but again -
+              we are mere corgis.
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="social-links">
+        <td>
+          <h2 class="content-header">
+            Follow Gouda and Mozzarella on Instagram
+          </h2>
+          <a href="https://www.instagram.com/gouda.and.mozzie/#">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width="35px"
+              height="35px"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  fill="#fe5c00"
+                ></path>
+                <path
+                  d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                  fill="#fe5c00"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                  fill="#fe5c00"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </td>
+      </tr>
+      <tr class="footer">
+        <td>
+          <p>
+            This message was absolutely totally 100% written by Gouda and
+            Mozzarella.
+            <br />
+            <br />
+            Just Kidding. Thank you for your time and Consideration!
+            <br />
+            Allison Binger, Web Developer.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
